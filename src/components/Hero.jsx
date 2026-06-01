@@ -15,9 +15,9 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h2 className={`${styles.heroHeadText} text-white`}>
             Every Canvas <span className='text-[#915EFF]'>Tells a Story</span>
-          </h1>
+          </h2>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Explore unique artworks, <br className='sm:block hidden' />
             find pieces that speak to you
