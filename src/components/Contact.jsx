@@ -46,7 +46,7 @@ const Contact = () => {
         'service_f7k3hcj',
         'template_vrf1e3l',
         {
-          to_name: "Oshani",
+          to_name: "Dear",
           from_name: form.name,
           from_email: form.email,
           contact: form.contact,
