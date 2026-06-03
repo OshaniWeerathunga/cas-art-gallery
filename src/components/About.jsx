@@ -8,7 +8,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+/*const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -27,9 +27,36 @@ const ServiceCard = ({ index, title, icon }) => (
           alt='canvas'
           className='w-72 h-72 object-contain'
         />
+        
+      </div>
+        
+    </motion.div>
+  </Tilt>
+);
+*/
 
-        
-        
+const ServiceCard = ({ index, title, icon, size }) => (
+  <Tilt className="xs:w-[250px] w-full">
+    <motion.div
+      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+      className="w-full rounded-[20px] shadow-card"
+    >
+      <div
+        className="bg-tertiary rounded-[20px] min-h-[350px] flex flex-col justify-center items-center p-4"
+      >
+        <img
+          src={icon}
+          alt={title}
+          className="w-72 h-72 object-contain"
+        />
+
+        <h3 className="text-white text-[20px] font-bold text-center mt-4">
+          {title}
+        </h3>
+
+        <h4 className="text-white text-[20px] font-normal text-center ">
+          {size}
+        </h4>
       </div>
     </motion.div>
   </Tilt>

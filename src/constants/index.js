@@ -48,19 +48,23 @@ export const navLinks = [
 
 const services = [
   {
-    title: "canvas1",
+    title: "Painting",
+    size: "60*90cm",
     icon: image1,
   },
   {
-    title: "canvas2",
+    title: "Painting",
+    size: "50*70cm",
     icon: image2,
   },
   {
-    title: "canvas3",
+    title: "Painting",
+    size: "50*70cm",
     icon: image3,
   },
   {
-    title: "canvas4",
+    title: "Wood art",
+    size: "30*60cm",
     icon: image4,
   },
 ];
@@ -207,22 +211,9 @@ const projects = [
     name: "Canvas Catalog",
     description:
       "Click on the image to explore the complete catalog with an enhanced viewing experience.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
+    
     image: catalog,
-    source_code_link: "https://iomint-my.sharepoint.com/:b:/r/personal/oweerathunga_iom_int/Documents/Documents/CAS%20ART%20CATALOG%20FINAL%203%20(1).pdf?csf=1&web=1&e=NmviG3",
+    source_code_link: "https://drive.google.com/file/d/17_gXIL6ghWPjilKm16j4kP6c_NxijQEq/view?usp=sharing",
   }
 ];
 
