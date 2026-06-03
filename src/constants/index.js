@@ -206,7 +206,7 @@ const projects = [
   {
     name: "Canvas Catalog",
     description:
-      "Click the PDF icon to explore the complete catalog with an enhanced viewing experience.",
+      "Click on the image to explore the complete catalog with an enhanced viewing experience.",
     tags: [
       {
         name: "react",

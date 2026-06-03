@@ -11,6 +11,10 @@ import { slideIn } from "../utils/motion";
 //service_wpdzwod
 //osJBcaHy6OssQEDIa
 
+//service_f7k3hcj
+//template_vrf1e3l
+//RimrfFidQ_0eyASoQ
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -39,8 +43,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_wpdzwod',
-        'template_4ov66ip',
+        'service_f7k3hcj',
+        'template_vrf1e3l',
         {
           to_name: "Oshani",
           from_name: form.name,
@@ -49,7 +53,7 @@ const Contact = () => {
           code: form.code,
           message: form.message,
         },
-        'osJBcaHy6OssQEDIa'
+        'RimrfFidQ_0eyASoQ'
       )
       .then(
         () => {
@@ -118,18 +122,18 @@ const Contact = () => {
               name='contact'
               value={form.contact}
               onChange={handleChange}
-              placeholder="Mobile Number (+974 XXXX XXXX)"
+              placeholder="Enter Mobile Number (+974 XXXX XXXX)"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Canvas Code</span>
+            <span className='text-white font-medium mb-4'>Art Number</span>
             <input
               type='text'
               name='code'
               value={form.code}
               onChange={handleChange}
-              placeholder="Enter Canvas Code"
+              placeholder="Enter art number ( Ex: 1, 2)"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -147,7 +151,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white bg-slate-800 font-bold shadow-md shadow-primary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
