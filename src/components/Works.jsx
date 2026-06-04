@@ -42,7 +42,7 @@ const ProjectCard = ({
             >
               <img
                 src={pdf}
-                alt='source code'
+                alt='catalog'
                 className='w-1/2 h-1/2 object-contain'
               />
             </div>
