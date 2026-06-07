@@ -27,6 +27,7 @@ import {
   image2,
   image3,
   image4,
+  image5,
   catalog
 
 } from "../assets";
@@ -49,12 +50,12 @@ export const navLinks = [
 const services = [
   {
     title: "Painting",
-    size: "60*90cm",
+    size: "70*100cm",
     icon: image1,
   },
   {
     title: "Painting",
-    size: "50*70cm",
+    size: "40*60cm",
     icon: image2,
   },
   {
@@ -64,8 +65,13 @@ const services = [
   },
   {
     title: "Wood art",
-    size: "30*60cm",
+    size: "30*30cm",
     icon: image4,
+  },
+  {
+    title: "Painting",
+    size: "20*30cm",
+    icon: image5,
   },
 ];
 

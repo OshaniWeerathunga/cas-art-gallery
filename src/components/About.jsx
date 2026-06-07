@@ -66,19 +66,31 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Sample Art Works</h2>
+        <p className={styles.sectionSubText}>CAS Art</p>
+        <h2 className={styles.sectionHeadText}>Introduction</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] w-full leading-[30px]'
       >
-        This platform is a space where creativity meets expression. 
-        We bring together original artworks crafted with passion and imagination, 
-        giving each piece a chance to be seen, appreciated, and owned. 
-        Art here is more than decoration—it is a story waiting to be shared.
+        Welcome to the CAS Art Exhibition Catalogue, a celebration of creativity, resilience, and human expression. 
+        This collection features artwork created by Afghan artists residing at Camp As Sayliyah (CAS) in Qatar, 
+        offering a unique glimpse into their experiences, perspectives, and talents. Art has served as more than a creative outlet; 
+        it has become a source of healing, connection, and empowerment. Through painting, drawing, and other artistic mediums, 
+        participants have found meaningful ways to express their identities, share their stories, and build confidence within their community. 
+        Each artwork presented here reflects not only individual talent but also the strength and determination of artists who continue to create 
+        despite uncertainty and displacement. By purchasing a piece, you are not only acquiring a unique work of art; you are also supporting the artists, 
+        recognizing their achievements, and contributing to opportunities for greater self-reliance and financial empowerment. We invite you to explore 
+        the collection and discover the stories behind each creation. Thank you for supporting art, dignity, and the transformative power of creativity.
       </motion.p>
+
+      <motion.div 
+        variants={textVariant()}
+        className='mt-10'
+      >
+        <h5 className={styles.sectionHeadText}>Sample Art Work Size</h5>
+      </motion.div>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (

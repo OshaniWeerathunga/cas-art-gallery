@@ -71,7 +71,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[17px] w-full leading-[30px]'
         >
           Our catalog showcases a carefully curated collection of original artworks 
           created with creativity, passion, and imagination. Each piece reflects unique 
@@ -81,7 +81,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap'>
+      <div className='mt-20 flex flex-wrap w-full'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
