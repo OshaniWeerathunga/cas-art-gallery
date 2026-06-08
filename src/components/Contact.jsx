@@ -9,7 +9,7 @@ import { slideIn } from "../utils/motion";
 
 //template_4ov66ip
 //service_wpdzwod
-//osJBcaHy6OssQEDIa
+//-tfxwWk0N5tzpYtok
 
 //service_f7k3hcj
 //template_vrf1e3l
@@ -73,7 +73,7 @@ const Contact = () => {
           message: form.message,
         },
         //'RimrfFidQ_0eyASoQ'
-        osJBcaHy6OssQEDIa
+        -tfxwWk0N5tzpYtok
         
       )
       .then(
