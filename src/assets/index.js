@@ -14,6 +14,11 @@ import image4 from "./image4.png";
 import image5 from "./image5.png";
 import catalog from "./catalog.png";
 import pdf from "./pdf.jpg";
+import number1 from "./number1.png";
+import number2 from "./number2.png";
+import number3 from "./number3.png";
+import number4 from "./number4.png";
+import number5 from "./number5.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -74,6 +79,11 @@ export {
   image4,
   image5,
   catalog,
-  pdf
+  pdf,
+  number1,
+  number2,
+  number3,
+  number4,
+  number5
 
 };

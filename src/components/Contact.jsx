@@ -110,7 +110,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Fields marked with <span className="text-red-500">*</span> are required
 </p>
-        <h3 className={styles.sectionHeadText}>Sell Form</h3>
+        <h3 className={styles.sectionHeadText}>Sells Form</h3>
 
         <form
           ref={formRef}
@@ -170,7 +170,7 @@ const Contact = () => {
           </label>
 
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4"><span className="text-red-500 mr-2">*</span>Focal Point</span>
+            <span className="text-white font-medium mb-4"><span className="text-red-500 mr-2">*</span>Organization Focal Point (The person to whom the payment should be handed over.)</span>
 
               <div className="relative w-full">
                 <select
@@ -185,7 +185,7 @@ const Contact = () => {
                   </option>
 
                   <option value="UN House">UN House</option>
-                  <option value="US Government">US Government</option>
+                  <option value="US Government">US Embassy</option>
                 </select>
 
                 {/* custom dropdown arrow */}
@@ -205,7 +205,7 @@ const Contact = () => {
               onChange={handleChange}
               className="w-5 h-5"
             />
-            Confirm Purchase Request
+            Confirm Purchase Request ( Order is final. No refunds or exchanges. Upon purchase confirmation, the painting will be marked as SOLD in the catalog. )
         </label>
 
           <label className='flex flex-col'>

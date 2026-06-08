@@ -28,7 +28,12 @@ import {
   image3,
   image4,
   image5,
-  catalog
+  catalog,
+  number1,
+  number2,
+  number3,
+  number4,
+  number5
 
 } from "../assets";
 
@@ -137,55 +142,56 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "CAS Art Catalogue SOP:",
+    company_name: "",
+    icon: number1,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "To support Afghan guests at CAS, the International Organization for Migration (IOM), the U.S. State Department’s Coordinator for Afghan Relocation Efforts (CARE), and the Bureau of Population, Refugees, and Migration (PRM) are facilitating the sale of artwork through a catalogue featuring over 300 pieces. One hundred percent of sales will go directly to the artists.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Circulation:",
+    company_name: "",
+    icon: number2,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "To encourage sales, the catalogue will be shared with organizations throughout Doha. To manage requests effectively, payment and artwork handover will be coordinated through designated focal points from each organization.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Buying a Painting",
+    company_name: "",
+    icon: number3,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "The catalogue will be “live” for two weeks. During this time, IOM will receive requests via the form on the website.",
+      "If two or more people request the same piece, the time stamp will determine who receives it. IOM will update the PDF daily to show which pieces have been sold. If you request a painting that has already been sold, IOM will contact you.",
+      "Please provide your organization’s focal point with the exact cash amount for each artwork you wish to purchase, in U.S. dollars. Payments are collected on behalf of the artists, and no change will be available.",
+      "All sales are final; refunds or exchanges cannot be processed.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Delivery",
+    company_name: "",
+    icon: number4,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "CAS colleagues will coordinate the delivery date with each organization’s focal point. All payments must be made at the time of delivery.",
+    ],
+  },
+  {
+    title: "Shipping",
+    company_name: "",
+    icon: number5,
+    iconBg: "#383E56",
+    date: "",
+    points: [
+      "IOM cannot support shipment outside of Doha.",
     ],
   },
 ];
@@ -219,7 +225,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Catalog File",
+    name: "Catalog PDF",
     description:
       "Click on the image to explore the complete catalog with an enhanced viewing experience.",
     
