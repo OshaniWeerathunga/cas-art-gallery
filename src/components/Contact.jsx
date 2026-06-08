@@ -23,37 +23,56 @@ const Contact = () => {
     contact: "",
     code: "",
     message: "",
+    focalPoint: "",
+    isConfirmed: false,
   });
 
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { name, value, type, checked } = e.target;
 
     setForm({
       ...form,
-      [name]: value,
+      [name]: type === "checkbox" ? checked : value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+      // validation
+    if (
+      !form.name ||
+      !form.email ||
+      !form.contact ||
+      !form.code ||
+      !form.focalPoint ||
+      !form.isConfirmed
+    ) {
+      alert("Please fill all required fields and confirm purchase.");
+      return;
+    }
+
     setLoading(true);
 
     emailjs
       .send(
         'service_f7k3hcj',
         'template_vrf1e3l',
+        
         {
           to_name: "Dear",
           from_name: form.name,
           from_email: form.email,
           contact: form.contact,
           code: form.code,
+          focal_point: form.focalPoint,
+          is_confirmed: form.isConfirmed ? "Yes" : "No",
           message: form.message,
         },
         'RimrfFidQ_0eyASoQ'
+        
       )
       .then(
         () => {
@@ -66,6 +85,8 @@ const Contact = () => {
             contact: "",
             code: "",
             message: "",
+            focalPoint: "",
+            isConfirmed: false,
           });
         },
         (error) => {
@@ -85,8 +106,9 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>Fields marked with <span className="text-red-500">*</span> are required
+</p>
+        <h3 className={styles.sectionHeadText}>Sell Form</h3>
 
         <form
           ref={formRef}
@@ -94,49 +116,96 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4'><span className="text-red-500 mr-2">*</span> Full Name </span>
             <input
               type='text'
               name='name'
+              required
               value={form.name}
               onChange={handleChange}
               placeholder="Enter your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'><span className="text-red-500 mr-2">*</span>Email Address</span>
             <input
               type='email'
               name='email'
+              required
               value={form.email}
               onChange={handleChange}
               placeholder="Enter your email address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Contact Number</span>
+            <span className='text-white font-medium mb-4'><span className="text-red-500 mr-2">*</span>Contact Number</span>
             <input
               type='text'
               name='contact'
+              required
               value={form.contact}
               onChange={handleChange}
               placeholder="Enter Mobile Number (+974 XXXX XXXX)"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Art Number</span>
+            <span className='text-white font-medium mb-4'><span className="text-red-500 mr-2">*</span>Art Number</span>
             <input
               type='text'
               name='code'
+              required
               value={form.code}
               onChange={handleChange}
               placeholder="Enter art number ( Ex: 1, 2)"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4"><span className="text-red-500 mr-2">*</span>Focal Point</span>
+
+              <div className="relative w-full">
+                <select
+                  name="focalPoint"
+                  required
+                  value={form.focalPoint}
+                  onChange={handleChange}
+                  className="w-full bg-tertiary py-4 pl-6 pr-16 text-white rounded-lg outline-none font-medium appearance-none"
+                >
+                  <option value="" disabled>
+                    Select Focal Point....
+                  </option>
+
+                  <option value="UN House">UN House</option>
+                  <option value="US Government">US Government</option>
+                </select>
+
+                {/* custom dropdown arrow */}
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 text-white pointer-events-none">
+                  ▼
+                </div>
+              </div>
+          </label>
+
+          <label className="flex items-center gap-3 text-white font-medium">
+            <span className="text-red-500 mr-2">*</span>
+            <input
+              type="checkbox"
+              name="isConfirmed"
+              required
+              checked={form.isConfirmed}
+              onChange={handleChange}
+              className="w-5 h-5"
+            />
+            Confirm Purchase Request
+        </label>
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea

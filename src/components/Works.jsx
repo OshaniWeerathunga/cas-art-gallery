@@ -19,15 +19,14 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}className="w-full">
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl w-full min-w-full'
-      >
-        <div className='relative w-full h-[500px]'
+      
+
+        <div className='mt-5 w-full'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        </div>
+        
+        <div className='mt-10 relative w-full h-[500px]'
           onClick={() => window.open(source_code_link, "_blank")}>
           <img
             src={image}
@@ -49,13 +48,7 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className='mt-5 w-full'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
-
-        
-      </Tilt>
+     
     </motion.div>
   );
 };
@@ -81,7 +74,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap w-full'>
+      <div className='mt-20 flex flex-wrap'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

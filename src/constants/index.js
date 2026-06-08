@@ -42,9 +42,14 @@ export const navLinks = [
     title: "Catalog",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "instruction",
+    title: "Instruction",
   },
+  {
+    id: "contact",
+    title: "Sells Form",
+  },
+  
 ];
 
 const services = [
@@ -214,7 +219,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Canvas Catalog",
+    name: "Catalog File",
     description:
       "Click on the image to explore the complete catalog with an enhanced viewing experience.",
     
