@@ -60,8 +60,8 @@ const Contact = () => {
       .send(
         //'service_f7k3hcj',
         //'template_vrf1e3l',
-        service_wpdzwod,
-        template_4ov66ip,
+        'service_wpdzwod',
+        'template_4ov66ip',
         {
           to_name: "Dear",
           from_name: form.name,
@@ -73,7 +73,7 @@ const Contact = () => {
           message: form.message,
         },
         //'RimrfFidQ_0eyASoQ'
-        -tfxwWk0N5tzpYtok
+        '-tfxwWk0N5tzpYtok'
         
       )
       .then(
