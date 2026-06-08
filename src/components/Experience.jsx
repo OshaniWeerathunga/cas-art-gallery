@@ -64,7 +64,7 @@ const Experience = () => {
           Everything you need to know before submitting your artwork purchase request.
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Purchase Instruction.
+          Purchase Instructions.
         </h2>
       </motion.div>
 
