@@ -52,7 +52,7 @@ export const navLinks = [
   },
   {
     id: "contact",
-    title: "Sells Form",
+    title: "Sales Form",
   },
   
 ];
