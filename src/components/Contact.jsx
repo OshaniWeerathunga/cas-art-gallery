@@ -58,9 +58,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_f7k3hcj',
-        'template_vrf1e3l',
-        
+        //'service_f7k3hcj',
+        //'template_vrf1e3l',
+        service_wpdzwod,
+        template_4ov66ip,
         {
           to_name: "Dear",
           from_name: form.name,
@@ -71,7 +72,8 @@ const Contact = () => {
           is_confirmed: form.isConfirmed ? "Yes" : "No",
           message: form.message,
         },
-        'RimrfFidQ_0eyASoQ'
+        //'RimrfFidQ_0eyASoQ'
+        osJBcaHy6OssQEDIa
         
       )
       .then(
