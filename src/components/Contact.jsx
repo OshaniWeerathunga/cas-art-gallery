@@ -109,7 +109,7 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Fields marked with <span className="text-red-500">*</span> are required
 </p>
-        <h3 className={styles.sectionHeadText}>Sells Form</h3>
+        <h3 className={styles.sectionHeadText}>Sales Form</h3>
 
         <form
           ref={formRef}
