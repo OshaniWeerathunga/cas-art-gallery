@@ -162,7 +162,7 @@ const experiences = [
     ],
   },
   {
-    title: "Buying a Painting",
+    title: "Buying a Painting:",
     company_name: "",
     icon: number3,
     iconBg: "#383E56",
@@ -175,7 +175,7 @@ const experiences = [
     ],
   },
   {
-    title: "Delivery",
+    title: "Delivery:",
     company_name: "",
     icon: number4,
     iconBg: "#E6DEDD",
@@ -185,7 +185,7 @@ const experiences = [
     ],
   },
   {
-    title: "Shipping",
+    title: "Shipping:",
     company_name: "",
     icon: number5,
     iconBg: "#383E56",
