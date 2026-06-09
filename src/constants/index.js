@@ -171,7 +171,7 @@ const experiences = [
     date: "",
     points: [
       "The catalogue will be “live” for two weeks. During this time, we will receive requests via the form on the website.",
-      "If two or more people request the same piece, the time stamp will determine who receives it. We will update the PDF daily to show which pieces have been sold. If you request a painting that has already been sold, IOM will contact you.",
+      "If two or more people request the same piece, the time stamp will determine who receives it. We will update the PDF daily to show which pieces have been sold. If you request a painting that has already been sold, we will contact you.",
       "Please provide your organization’s focal point with the exact cash amount for each artwork you wish to purchase, in U.S. dollars. Payments are collected on behalf of the artists, and no change will be available.",
       "All sales are final; refunds or exchanges cannot be processed.",
     ],
