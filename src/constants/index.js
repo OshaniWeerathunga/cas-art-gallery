@@ -148,7 +148,9 @@ const experiences = [
     iconBg: "#383E56",
     date: "",
     points: [
-      "To support Afghan guests at CAS, the International Organization for Migration (IOM), the U.S. State Department’s Coordinator for Afghan Relocation Efforts (CARE), and the Bureau of Population, Refugees, and Migration (PRM) are facilitating the sale of artwork through a catalogue featuring over 300 pieces. One hundred percent of sales will go directly to the artists.",
+      
+        "To support Afghan guests at CAS, the International Organization for Migration (IOM), the U.S. State Department’s Coordinator for Afghan Relocation Efforts (CARE), and the Bureau of Population, Refugees, and Migration (PRM) are facilitating the sale of artwork through a catalogue featuring over 300 pieces.**One hundred percent of sales will go directly to the artists.**"
+
     ],
   },
   {
@@ -168,8 +170,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "",
     points: [
-      "The catalogue will be “live” for two weeks. During this time, IOM will receive requests via the form on the website.",
-      "If two or more people request the same piece, the time stamp will determine who receives it. IOM will update the PDF daily to show which pieces have been sold. If you request a painting that has already been sold, IOM will contact you.",
+      "The catalogue will be “live” for two weeks. During this time, we will receive requests via the form on the website.",
+      "If two or more people request the same piece, the time stamp will determine who receives it. We will update the PDF daily to show which pieces have been sold. If you request a painting that has already been sold, IOM will contact you.",
       "Please provide your organization’s focal point with the exact cash amount for each artwork you wish to purchase, in U.S. dollars. Payments are collected on behalf of the artists, and no change will be available.",
       "All sales are final; refunds or exchanges cannot be processed.",
     ],
@@ -191,7 +193,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "",
     points: [
-      "IOM cannot support shipment outside of Doha.",
+      "We cannot support shipment outside of Doha.",
     ],
   },
 ];

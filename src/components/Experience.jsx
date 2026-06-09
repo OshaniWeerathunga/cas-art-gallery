@@ -48,7 +48,11 @@ const ExperienceCard = ({ experience }) => {
             key={`experience-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
           >
-            {point}
+              {point.split("**").map((text, i) =>
+                  i % 2 === 1 ? <strong key={i} className="font-extrabold text-[16px]" >
+  {text}
+</strong> : text
+              )}
           </li>
         ))}
       </ul>

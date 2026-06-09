@@ -124,7 +124,7 @@ const Contact = () => {
               required
               value={form.name}
               onChange={handleChange}
-              placeholder="Enter your good name?"
+              placeholder="Enter your name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
@@ -204,7 +204,14 @@ const Contact = () => {
               onChange={handleChange}
               className="w-5 h-5"
             />
-            Confirm Purchase Request ( Order is final. No refunds or exchanges. Upon purchase confirmation, the painting will be marked as SOLD in the catalog. )
+            
+            <span>
+              Confirm Purchase Request
+              <p className="text-sm text-gray-300 mt-1">
+                (Order is final. No refunds or exchanges. Upon purchase confirmation, the painting will be marked as SOLD in the catalog.)
+              </p>
+            </span>
+
         </label>
 
           <label className='flex flex-col'>
