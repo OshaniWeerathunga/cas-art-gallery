@@ -16,7 +16,7 @@ const Hero = () => {
 
         <div>
           <h3 className={`${styles.heroHeadText} text-white`}>
-            Every Art <span className='text-[#915EFF]'>Tells a Story</span>
+            Every Artist <span className='text-[#915EFF]'>Tells a Story</span>
           </h3>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Explore unique artworks, <br className='sm:block hidden' />
