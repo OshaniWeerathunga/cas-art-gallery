@@ -185,6 +185,8 @@ const Contact = () => {
 
                   <option value="UN House">UN House</option>
                   <option value="US Government">US Embassy</option>
+                  <option value="US Government">CAS</option>
+                  <option value="US Government">Others (please specify)</option>
                 </select>
 
                 {/* custom dropdown arrow */}
