@@ -24,6 +24,7 @@ const Contact = () => {
     code: "",
     message: "",
     focalPoint: "",
+    otherFocalPoint: "",
     isConfirmed: false,
   });
 
@@ -48,9 +49,10 @@ const Contact = () => {
       !form.contact ||
       !form.code ||
       !form.focalPoint ||
-      !form.isConfirmed
+      !form.isConfirmed ||
+      (form.focalPoint === "Other" && !form.otherFocalPoint)
     ) {
-      alert("Please fill all required fields and confirm purchase.");
+      alert("Please complete all required fields and confirm your purchase.");
       return;
     }
 
@@ -67,7 +69,7 @@ const Contact = () => {
           from_email: form.email,
           contact: form.contact,
           code: form.code,
-          focal_point: form.focalPoint,
+          focal_point: form.focalPoint === "Other" ? form.otherFocalPoint : form.focalPoint,
           is_confirmed: form.isConfirmed ? "Yes" : "No",
           message: form.message,
         },
@@ -78,7 +80,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("✅ Thank you! Your request has been submitted successfully. I will get back to you soon.");
 
           setForm({
             name: "",
@@ -87,6 +89,7 @@ const Contact = () => {
             code: "",
             message: "",
             focalPoint: "",
+            otherFocalPoint: "",
             isConfirmed: false,
           });
         },
@@ -94,7 +97,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("❌ Something went wrong. Please try again later.");
         }
       );
   };
@@ -185,8 +188,8 @@ const Contact = () => {
 
                   <option value="UN House">UN House</option>
                   <option value="US Government">US Embassy</option>
-                  <option value="US Government">CAS</option>
-                  <option value="US Government">Others (please specify)</option>
+                  <option value="CAS">CAS</option>
+                  <option value="Other">Others (please specify)</option>
                 </select>
 
                 {/* custom dropdown arrow */}
@@ -195,6 +198,27 @@ const Contact = () => {
                 </div>
               </div>
           </label>
+
+          
+          {form.focalPoint === "Other" && (
+            <label className="flex flex-col">
+              <span className="text-white font-medium mb-4">
+                <span className="text-red-500 mr-2">*</span>
+                Specify Focal Point Name
+              </span>
+
+              <input
+                type="text"
+                name="otherFocalPoint"
+                required
+                value={form.otherFocalPoint}
+                onChange={handleChange}
+                placeholder="Enter focal point name"
+                className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              />
+            </label>
+          )}
+
 
           <label className="flex items-center gap-3 text-white font-medium">
             <span className="text-red-500 mr-2">*</span>
@@ -230,9 +254,10 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white bg-slate-800 font-bold shadow-md shadow-primary'
+            disabled={loading}
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white bg-slate-800 font-bold shadow-md shadow-primary disabled:opacity-50 disabled:cursor-not-allowed'
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? "Sending..." : "Submit Order"}
           </button>
         </form>
       </motion.div>
